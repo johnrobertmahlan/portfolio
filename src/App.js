@@ -19,7 +19,7 @@ class App extends Component {
         <Route exact path="/">
           <div className="App">
             <header className="App-header">
-              <ReactRotatingText items={['hi', 'my name is', 'john robert mahlan', 'and i am a', 'full stack web developer']} />
+              <ReactRotatingText items={['hello, world', 'my name is john robert mahlan', 'and i am a full stack web developer']} />
               <br />
               <div>
                 <a href="https://github.com/johnrobertmahlan" target="_blank" style={iconStyle}><FaGithub /></a>
