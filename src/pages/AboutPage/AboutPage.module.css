@@ -15,7 +15,12 @@
     flex: 1 0 auto;
     margin-top: 70px;
   }
-  
+
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
   a {
     color: #61dafb;
   }
@@ -30,9 +35,16 @@
   }
 
   .Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
     background-color: #61dafb;
+    color: #282c34;
+    font-weight: 800;
     height: 40px;
-    width: 100px;
+    width: 200px;
   }
 
   .Footer {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { IconContext } from 'react-icons';
 import { Route, Switch, Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
@@ -22,10 +23,12 @@ class App extends Component {
               <ReactRotatingText items={['hello, world', 'my name is john robert mahlan', 'and i am a full stack web developer']} />
               <br />
               <div>
+                <IconContext.Provider value={{ className: 'react-icons' }}>
                 <a href="https://github.com/johnrobertmahlan" target="_blank" style={iconStyle}><FaGithub /></a>
                 <a href="https://www.linkedin.com/in/johnrobertmahlan/" target="_blank" style={iconStyle}><FaLinkedin /></a>
                 <Link to="/contact" style={iconStyle}><GrMail /></Link>
                 <Link to="/about" style={iconStyle}><BsFillInfoCircleFill /></Link>
+                </IconContext.Provider>
               </div>
             </header>
           </div>
