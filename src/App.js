@@ -4,7 +4,10 @@ import { Route, Switch, Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
+import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
+import DevPage from './pages/DevPage/DevPage';
+import PhilPage from './pages/PhilPage/PhilPage';
 import './App.css';
 const ReactRotatingText = require('react-rotating-text')
 
@@ -12,7 +15,6 @@ const iconStyle = {
   color: '#61dafb',
   padding: '10px'
 }
-
 class App extends Component {
   render() {
     return(
@@ -33,8 +35,17 @@ class App extends Component {
             </header>
           </div>
         </Route>
+        <Route exact path="/contact">
+          <ContactPage />
+        </Route>
         <Route exact path="/about">
           <AboutPage />
+        </Route>
+        <Route exact path="/about/dev">
+          <DevPage />
+        </Route>
+        <Route exact path="/about/phil">
+          <PhilPage />
         </Route>
       </Switch>
     )
