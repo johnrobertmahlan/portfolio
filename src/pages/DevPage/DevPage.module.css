@@ -10,12 +10,22 @@
   }
 
   .Content {
-      flex: 0 1 auto;
+    width: 750px;
+    text-align: justify;
+    flex: 1 0 auto;
+    margin-top: 70px;
   }
 
   .Tech {
       display: flex;
+      justify-content: space-evenly;
   }
+
+  /* .Project {
+      display: flex;
+      justify-content: center;
+      width: 100%
+  } */
 
   .Footer {
       padding-top: 0;
