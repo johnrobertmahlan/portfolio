@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import DevPage from './pages/DevPage/DevPage';
 import PhilPage from './pages/PhilPage/PhilPage';
+import ProjectPage from './pages/ProjectPage/ProjectPage';
 import './App.css';
 const ReactRotatingText = require('react-rotating-text')
 
@@ -43,6 +44,9 @@ class App extends Component {
         </Route>
         <Route exact path="/about/dev">
           <DevPage />
+        </Route>
+        <Route exact path="/about/dev/projects">
+          <ProjectPage />
         </Route>
         <Route exact path="/about/phil">
           <PhilPage />
