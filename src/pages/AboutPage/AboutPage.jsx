@@ -12,7 +12,7 @@ class AboutPage extends Component {
                     <Fade top>
                         <img className={styles.Profile} src="https://i.imgur.com/jIf1H2h.jpg?1"></img>
                     </Fade>
-                    <Fade left>
+                    <Fade bottom>
                         <h5>
                         I am a full stack web developer based in Denver. I am a fan of clean, crisp code and simple, elegant design, and I strive to achieve both in my work. I am also a philosopher who enjoys grappling with foundational questions about the nature of existence, goodness, and reason. I am a lifelong learner who is always looking for the next challenge.
                         </h5>

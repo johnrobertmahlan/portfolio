@@ -5,6 +5,7 @@ import { FaHtml5, FaNode, FaReact, FaGitSquare, FaGithub } from 'react-icons/fa'
 import { SiCsswizardry, SiJavascript, SiPython, SiPostgresql} from 'react-icons/si';
 import { DiDjango, DiRuby } from 'react-icons/di';
 import Footer from '../../components/Footer/Footer';
+import { AiFillForward } from 'react-icons/ai';
 
 const iconStyle = {
     color: '#61dafb',
@@ -22,6 +23,7 @@ class DevPage extends Component {
                     <div className={styles.GA}>
                         <p>I am also a recent graduate of <a href="https://generalassemb.ly/" target="_blank">General Assembly's</a> Software Engineering Immersive Remote Flex Program.
                         This course provided 420+ hours of instruction in a variety of languages, frameworks, and technologies, including:</p> 
+                        <br />
                         <div className={styles.Tech}>
                             <FaHtml5 style={iconStyle}/>
                             <SiCsswizardry style={iconStyle}/>
@@ -37,7 +39,9 @@ class DevPage extends Component {
                             <FaGithub style={iconStyle}/>
                         </div>
                         <br /><br />
-                        If you want to check out some of the projects I've been working on recently, head over to my <Link to="/about/dev/projects">Projects</Link> page.
+                        <div className={styles.ButtonField}>
+                            <Link to="/about/dev/projects" className={styles.Button}>Recent Projects</Link>
+                        </div>
                     </div> 
                 </div>
                 <Footer className={styles.Footer}/>

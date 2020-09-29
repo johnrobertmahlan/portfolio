@@ -36,6 +36,26 @@
       text-decoration: none;
   }
 
+  .ButtonField {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 20px;
+    font-weight: 800;
+    height: 40px;
+    width: 200px;
+    margin: 30px;
+  }
+
   .Footer {
       padding-top: 0;
   }
