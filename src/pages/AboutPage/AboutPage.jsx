@@ -10,7 +10,7 @@ class AboutPage extends Component {
             <div className={styles.AboutPage}>
                 <div className={styles.Bio}>
                     <Fade top>
-                        <h3>John Robert Mahlan</h3>
+                        <img className={styles.Profile} src="https://i.imgur.com/jIf1H2h.jpg?1"></img>
                     </Fade>
                     <Fade left>
                         <h5>

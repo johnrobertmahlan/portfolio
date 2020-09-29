@@ -21,7 +21,7 @@ class DevPage extends Component {
                     </div>
                     <div className={styles.GA}>
                         <p>I am also a recent graduate of <a href="https://generalassemb.ly/" target="_blank">General Assembly's</a> Software Engineering Immersive Remote Flex Program.
-                        This course provided 420+ hours of instruction in a variety of languages, frameworks, and technologies.</p> If you want to check out some of the projects I've been working on recently, head over to my <Link to="/about/dev/projects">Projects</Link> page.
+                        This course provided 420+ hours of instruction in a variety of languages, frameworks, and technologies, including:</p> 
                         <div className={styles.Tech}>
                             <FaHtml5 style={iconStyle}/>
                             <SiCsswizardry style={iconStyle}/>
@@ -36,6 +36,8 @@ class DevPage extends Component {
                             <FaGitSquare style={iconStyle}/>
                             <FaGithub style={iconStyle}/>
                         </div>
+                        <br /><br />
+                        If you want to check out some of the projects I've been working on recently, head over to my <Link to="/about/dev/projects">Projects</Link> page.
                     </div> 
                 </div>
                 <Footer className={styles.Footer}/>
