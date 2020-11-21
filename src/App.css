@@ -9,7 +9,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: url('https://i.imgur.com/UvIPd6t.jpg');
+  background-size: cover;
+  font-family: 'Baskervville', serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,11 +19,11 @@
   justify-content: center;
   text-align: left;
   font-size: calc(30px + 2vmin);
-  color: white;
+  color: rgb(47, 216, 250);
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -34,7 +36,7 @@
 }
 
 .sm-icons {
-  color: #61dafb;
+  color: black;
 }
 
 .react-rotating-text-cursor {
@@ -55,4 +57,6 @@
 
 .react-icons:hover {
   color: white;
+  margin: 0 20px;
+  transform: scale(1.1);
 }

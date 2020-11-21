@@ -13,8 +13,9 @@ import './App.css';
 const ReactRotatingText = require('react-rotating-text')
 
 const iconStyle = {
-  color: '#61dafb',
-  padding: '10px'
+  color: 'rgb(47, 216, 250)',
+  padding: '10px',
+  transition: '250ms'
 }
 class App extends Component {
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
         <Route exact path="/">
           <div className="App">
             <header className="App-header">
-              <ReactRotatingText items={['hello, world', 'my name is john robert mahlan', 'and i am a full stack web developer']} />
+              <ReactRotatingText items={['hello, world', 'my name is john robert mahlan', 'and i am a philosopher and software engineer']} />
               <br />
               <div>
                 <IconContext.Provider value={{ className: 'react-icons' }}>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import Footer from '../../components/Footer/Footer';
 import styles from './AboutPage.module.css';
 
@@ -8,7 +9,9 @@ class AboutPage extends Component {
     render() {
         return(
             <div className={styles.AboutPage}>
-                <h1>John Robert Mahlan</h1>
+                <Flip left>
+                    <h2>John Robert Mahlan</h2>
+                </Flip>
                 <div className={styles.BioImage}>
                     <Fade left>
                         <img className={styles.Profile} src="https://i.imgur.com/jIf1H2h.jpg?1"></img>
@@ -31,8 +34,9 @@ class AboutPage extends Component {
                     </div>
                     </Fade>
                 </div>
-
-                <Footer className={styles.Footer}/>
+                <Flip right>
+                    <Footer className={styles.Footer}/>
+                </Flip>
             </div>
         )
     }
