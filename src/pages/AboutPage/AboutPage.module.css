@@ -1,12 +1,14 @@
 .AboutPage {
-    background-color: #282c34;
+    background-image: url('https://i.imgur.com/UvIPd6t.jpg');
+    background-size: cover;
+    font-family: 'Baskervville', serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: rgb(47, 216, 250);
   }
 
   .Bio {
@@ -17,18 +19,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid rgb(47, 216, 250)
   }
 
   .BioImage {
     width: 75vw;
     display: flex;
-    justify-content: space-evenly;
-  }
-
-  .BioContent {
-    margin-left: 30px;
-    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
   }
 
   h3 {
@@ -37,7 +41,7 @@
   }
 
   .Profile {
-    border: 5px solid #61dafb;
+    border: 3px solid rgb(47, 216, 250);
     border-radius: 10px;
     margin: 0 auto;
     /* margin-left: 175px; */
@@ -62,6 +66,7 @@
     align-items: center;
     text-decoration: none;
     border-radius: 5px;
+    border: 2px solid #282c34;
     background-color: #61dafb;
     color: #282c34;
     font-size: 20px;
@@ -69,6 +74,12 @@
     height: 40px;
     width: 200px;
     margin: 30px;
+    transition: 250ms;
+  }
+
+  .Button:hover {
+    margin: 5 10px;
+    transform: scale(1.1);
   }
 
   .Footer {
