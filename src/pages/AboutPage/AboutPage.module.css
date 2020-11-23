@@ -55,6 +55,14 @@
     color: #61dafb;
   }
 
+  .BioLink {
+    transition: 250ms;
+  }
+
+  .BioLink:hover {
+    transform: scale(1.1);
+  }
+
   .ButtonField {
     display: flex;
     justify-content: space-between;

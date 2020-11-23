@@ -12,13 +12,14 @@ class AboutPage extends Component {
                 <Fade top>
                     <div className={styles.BioImage}>
                         <img className={styles.Profile} src="https://i.imgur.com/jIf1H2h.jpg?1"></img>
-                        <h2>JOHN ROBERT MAHLAN</h2>
+                        <a className={styles.BioLink} href="/about/#bio"><h2>JOHN ROBERT MAHLAN</h2></a>
                         <div className={styles.ButtonField}>
                             <a href="/about/#phil" className={styles.Button}>Philosophy</a>
                             <a href="/about/#dev" className={styles.Button}>Development</a>
                         </div>
                     </div>
-                    <div className={styles.Bio}>
+                </Fade>
+                    <div id={'bio'} className={styles.Bio}>
                         <h5>
                             I am a full-stack software engineer with a Ph.D. in philosophy, a humanist working in tech, a recovering academic and lifelong learner.
                             <br /><br />
@@ -43,7 +44,6 @@ class AboutPage extends Component {
                     <div id={'dev'}>
                         DEVELOPMENT
                     </div>
-                </Fade>
                 <Fade bottom>
                     <Footer className={styles.Footer}/>
                 </Fade>
